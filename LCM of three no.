@@ -1,0 +1,14 @@
+def find_gcd(x, y):
+    while y != 0:
+        x, y = y, x % y
+    return x
+def find_lcm_of_two(x, y):
+    return (x * y) 
+
+def find_lcm_of_three(a, b, c):
+    lcm_ab = find_lcm_of_two(a, b)
+    final_lcm = find_lcm_of_two(lcm_ab, c)
+    return final_lcm
+num1, num2, num3 = 12, 15, 20
+result = find_lcm_of_three(num1, num2, num3)
+print(f"The LCM of {num1}, {num2}, and {num3} is: {result}")
