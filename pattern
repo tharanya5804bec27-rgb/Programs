@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int n;
+    cout << "Enter the number of lines : ";
+    cin >> n;
+    for (int row = n; row >= 1; row--) {
+        
+        for (int col = 1; col <= row; col++) {
+            if (row % 2 == 0) {
+                std::cout << '0';
+            } else {
+                cout << '1';
+            }
+        }
+        
+        cout << "\n";
+    }
+
+    return 0;
+}
