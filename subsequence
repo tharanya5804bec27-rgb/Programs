@@ -1,0 +1,13 @@
+def is_subsequence(s1, s2):
+    i, j = 0, 0
+    len1, len2 = len(s1), len(s2)
+    while i < len1 and j < len2:
+        if s1[i] == s2[j]:
+            i += 1
+        j += 1
+    return i == len1
+S1 = "AXY"
+S2 = "ADXCPY"
+
+print(is_subsequence(S1, S2))  
+
