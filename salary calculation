@@ -1,0 +1,22 @@
+public class Main 
+{
+    public static double calculateGross(double basic,double allowance){
+        return basic+allowance;
+    }
+    public static double getDeduction(double detection){
+        return detection;
+    }
+    public static double calculatenet(double grossSalary,double deduction){
+        return grossSalary-deduction;
+    }
+	public static void main(String[] args) {
+	    double basic=30000;
+	    double allowance=5000;
+	    double deduction=2000;
+	    double grossSalary = Main.calculateGross(basic, allowance);
+        double netSalary = Main.calculatenet(grossSalary,deduction);
+        System.out.println("Gross Salary = " + (int)grossSalary);
+        System.out.println("Net Salary = " + (int)netSalary);
+		
+	}
+}
