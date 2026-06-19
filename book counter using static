@@ -1,0 +1,16 @@
+public class LibraryBook {
+    private static int totalBooks = 0;
+    private String title;
+    public LibraryBook(String title) {
+        this.title = title;
+        totalBooks++; 
+        System.out.println("Book Added");
+        System.out.println("Total Books: " + totalBooks);
+        System.out.println(); 
+    }
+    public static void main(String[] args) {
+        LibraryBook book1 = new LibraryBook("digital Electronics");
+        LibraryBook book2 = new LibraryBook("Electronics circuit");
+        LibraryBook book3 = new LibraryBook("Algorithms");
+    }
+}
